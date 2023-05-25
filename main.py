@@ -21,10 +21,10 @@ def imageProcess(input_data):
     #input1 = cv2.imread(input_path.file.read())
     #input1 = cv2.imdecode(np.frombuffer(input_path.read(), np.uint8), cv2.IMREAD_COLOR)
     input1 = cv2.imdecode(np.frombuffer(input_data, np.uint8), cv2.IMREAD_COLOR)    
-    #resized_image = cv2.resize(input1, (1600, 1200))
+    resized_image = cv2.resize(input1, (1600, 1200))
     
     #background removal
-    output = remove(input1)
+    output = remove(resized_image)
     #RGB to gray
     grayscale_image = cv2.cvtColor(output, cv2.COLOR_BGR2GRAY)
     
