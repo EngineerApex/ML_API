@@ -70,7 +70,7 @@ def imageProcess(input_data):
 
     #for testing purpose only !!!!!!!!!!!!!!!!!!!!!!!!
     
-    return predicted_label[0]
+    return predicted_label[1]
     
 
 @app.post("/predict")
