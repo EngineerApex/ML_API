@@ -24,7 +24,7 @@ def imageProcess(input_data):
     resized_image = cv2.resize(input1, (1600, 1200))
     
     #background removal
-    output = remove(input1)
+    output = remove(resized_image)
     #RGB to gray
     grayscale_image = cv2.cvtColor(output, cv2.COLOR_BGR2GRAY)
     
