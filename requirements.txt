@@ -1,6 +1,5 @@
 numpy
 pip==23.1.2
-python_version==3.9
 rembg==2.0.32
 python-multipart==0.0.5
 scikit-learn==1.0.2
