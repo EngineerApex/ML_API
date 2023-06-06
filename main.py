@@ -10,6 +10,10 @@ import os
 from rembg import remove
 from sklearn.ensemble import RandomForestClassifier
 
+import warnings
+from sklearn.exceptions import DataConversionWarning
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+warnings.filterwarnings("ignore", category=DataConversionWarning)
 
 app = FastAPI()
 
